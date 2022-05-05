@@ -1,4 +1,56 @@
-.App {
-  text-align: center;
+nav {
+  background-color: #183F3C;
 }
 
+ul:first-child {
+  float: left;
+}
+ul:last-child {
+  float: right;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.menu {
+  margin: 0;
+  list-style-type: none;
+}
+.dropdown {
+  display: flex;
+  height: 95%;
+  width: 665px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+  padding-right: 34px;
+  border-left: 0.5px solid #DFDEE2;
+  font-weight: 700;
+}
+
+.navbar-wrapper .menu a {
+  color: #DFDEE2;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}

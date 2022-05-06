@@ -1,5 +1,32 @@
+/* IN GENERAL */
+img {
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #3E4147;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #004A44;
+  color: #fff;
+  width: 154px;
+  height: 53px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border-color: #004A44;
+  border-style: solid;
+  box-shadow: 2px 2px 5px rgba(0,74,68, .25);
+}
+
+/* NAVBAR */
 nav {
   background-color: #183F3C;
+  margin: 0;
 }
 
 ul:first-child {
@@ -12,6 +39,7 @@ ul:last-child {
 li {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 a {
@@ -29,13 +57,17 @@ a {
 }
 
 .menu {
+  display:flex;
+  align-items: center;
   margin: 0;
   list-style-type: none;
 }
+
 .dropdown {
   display: flex;
   height: 95%;
-  width: 665px;
+  margin: 0;
+  padding-right: 20px;
 }
 
 .nav-link {
@@ -47,10 +79,69 @@ a {
   font-weight: 700;
 }
 
-.navbar-wrapper .menu a {
+.search-icon {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.navbar-wrapper .dropdown a {
   color: #DFDEE2;
   width: auto;
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+/* LANDING PAGE */
+.banner {
+  background-color: #F0B861;
+}
+
+.banner-content {
+  display: flex;
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 115px;
+  padding-right: 80px;
+}
+
+.banner-left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 380%;
+}
+
+.banner-right-side {
+  flex: 1;
+}
+
+span.font-luckiest-guy {
+  font-family: Luckiest Guy;
+  color: #ED5E37;
+  font-size: 96px;
+  padding-left: 30px;
+}
+
+.banner-bottom {
+  display: flex;
+  color: #3E4147;
+  font-size: 21px;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-bottom h3 {
+  width: 250px;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width:1000px) {
+  .nav-link {
+    display: none;
+  }
 }

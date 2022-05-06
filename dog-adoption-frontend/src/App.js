@@ -1,6 +1,7 @@
 import React, {useState } from "react";
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import Navbar from "./components/navbar";
 import Homepage from "./components/homepage";
 import Singledog from "./components/singledog"
@@ -11,6 +12,12 @@ function App() {
   // console.log(singledog)
   return (
     <div className="App">
+      <Helmet>
+        <title>JRR Dog Adoption Center</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"></link>
+      </Helmet> 
       <Router> 
       <Navbar />
       <Routes >

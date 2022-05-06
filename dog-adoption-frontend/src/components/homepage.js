@@ -1,22 +1,26 @@
 const Homepage = () => {
     return (
-      <div id="landing-page" >
-        <div id="banner">
-          <div id="banner-left-side">
-            <h1>
-              <span>
+      <div className="landing-page">
+        <div className="banner">
+          <div className="banner-content">
+            <div className="banner-left-side">
+              <h1>
                 Human,
-              </span>
-            will you take me
-            </h1>
-            <h1>HOME?</h1>
-            <button>Subscribe Now</button>
+                <span className="font-luckiest-guy">
+                  HOME ?
+                </span>
+              </h1>
+              <h1>will you take me</h1>
+              <button>Subscribe Now</button>
+            </div>
+            <div className="banner-right-side">
+              <img alt="Dog" src={require("../images/landing-page-img.jpg")} />
+            </div>
           </div>
-          <div id="banner-right-side">
-            <img alt="Dog" src={require("../images/dog1.jpg")} />
+          <div className="banner-bottom">
+            <h3>Find Your Next Loyal Best Friend</h3>
           </div>
         </div>
-        <h2>Find Your Next Loyal Best Friend</h2>
         <div>
           <img alt= "dog" src={require("../images/dog1.jpg")}/> 
           <h5>Dog Name </h5>

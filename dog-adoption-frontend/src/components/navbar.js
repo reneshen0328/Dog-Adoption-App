@@ -20,9 +20,9 @@ const navbar = () => {
           </li>
         </ul>
 
-        <ul className="dropdown menu">
-          <li className="nav-link">
-            <a className="search-icon">
+        <ul className="dropdown">
+          <li className="search-icon">
+            <a>
               <NavLink to= "/">
                 <img alt="search-icon" src={require("../images/MagnifyingGlass.jpg")}></img>
               </NavLink>

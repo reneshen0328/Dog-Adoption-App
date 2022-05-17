@@ -8,13 +8,16 @@ const Alldog = (props) => {
          return <Link to="/singledog" />
       }
     return (
-      <div>
-            <h1> All Dogs </h1>
-            <div >
+      <div className="category-wrapper">
+         <h1> All Dogs </h1>
+         <div className="dog-preview-list">
+            <div className="dog-preview-list-item corgi">
                <img alt= "dog" src={require("../images/dog1.jpg")}/> 
-               <h5  onClick= {() => setSingleDog("../images/dog1.jpg","DogName1","age","dog description","dog breed")}>Dog Name </h5>
-               <p> Dog Age</p>
-               <p> Description</p>
+               <div className="dog-preview-description">
+                  <h3  onClick= {() => setSingleDog("../images/dog1.jpg","DogName1","age","dog description","dog breed")}>Hunter </h3>
+                  <p className="text-strong"> 3 Months</p>
+                  <p>My name is Hunter, and I'm always happy. I'm also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that's why my name is Hunter!</p>
+               </div>
             </div>
 
             <div >
@@ -51,6 +54,7 @@ const Alldog = (props) => {
                <p> Dog Age</p>
                <p> Description</p>
             </div>
+         </div>
       </div>
     );
   };

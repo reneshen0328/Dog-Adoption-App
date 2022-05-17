@@ -11,9 +11,20 @@ h1 {
   padding: 0;
 }
 
+h3 {
+  font-size: 21px;
+  color: #3E4147;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   background-color: #004A44;
   color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .05rem;
   width: 154px;
   height: 53px;
   border-radius: 10px;
@@ -21,6 +32,10 @@ button {
   border-color: #004A44;
   border-style: solid;
   box-shadow: 2px 2px 5px rgba(0,74,68, .25);
+}
+
+.text-strong {
+  font-weight: 500;
 }
 
 /* NAVBAR */
@@ -43,6 +58,7 @@ li {
 }
 
 a {
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
 }
@@ -101,7 +117,7 @@ a {
 .banner-content {
   display: flex;
   margin: 0;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-left: 115px;
   padding-right: 80px;
 }
@@ -128,6 +144,7 @@ span.font-luckiest-guy {
 
 .banner-bottom {
   display: flex;
+  flex-direction: column;
   color: #3E4147;
   font-size: 21px;
   font-weight: 300;
@@ -135,13 +152,66 @@ span.font-luckiest-guy {
   justify-content: center;
 }
 
+.banner-bottom img {
+  margin-bottom: -30px;
+}
+
 .banner-bottom h3 {
   width: 250px;
+  margin-top: -55px;
+  letter-spacing: .15rem;
+  font-weight: 300;
+}
+
+.dog-preview-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+
+.dog-preview-list-item {
+  display: flex;
+  flex: 1;
+  max-width: 350px;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 60px;
+}
+
+.dog-preview-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dog-preview-description h3 {
+  padding: 21px 0 13px 0;
+}
+
+.dog-preview-description p {
+  font-size: 19px;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  color: #8F96A1;
+  padding: 4px 0;
+  margin: 0;
 }
 
 /* RESPONSIVE CSS */
 @media only screen and (max-width:1000px) {
   .nav-link {
+    display: none;
+  }
+}
+@media only screen and (max-width:1340px) {
+  .banner-left-side {
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 148px;
+  }
+  .banner-right-side {
     display: none;
   }
 }

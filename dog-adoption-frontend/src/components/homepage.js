@@ -19,19 +19,26 @@ const Homepage = () => {
           </div>
           <div className="banner-bottom">
             <h3>Find Your Next Loyal Best Friend</h3>
+            <img alt="arrow-down" src={require("../images/arrow-down.png")} />
           </div>
         </div>
-        <div>
-          <img alt= "dog" src={require("../images/dog1.jpg")}/> 
-          <h5>Dog Name </h5>
-          <p> Dog Age</p>
-          <p> Description</p>
-        </div>
-        <div>
-          <img alt= "dog" src={require("../images/dog2.jpg")}/> 
-          <h5>Dog Name </h5>
-          <p> Dog Age</p>
-          <p> Description</p>
+        <div className="dog-preview-list">
+          <div className="dog-preview-list-item corgi">
+            <img alt= "dog" src={require("../images/dog1.jpg")}/> 
+            <div className="dog-preview-description">
+              <h3>Hunter</h3>
+              <p className="text-strong">3 Months</p>
+              <p>My name is Hunter, and I'm always happy. I'm also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that's why my name is Hunter!</p>
+            </div>
+          </div>
+          <div className="dog-preview-list-item Labrador">
+            <img alt= "dog" src={require("../images/dog2.jpg")}/> 
+            <div className="dog-preview-description">
+              <h3>Champ</h3>
+              <p className="text-strong">5 Months</p>
+              <p>My name is Champ. I'm super smart, and my caretakers often trusted me with kids. I 'm very patience and will be a great family member of yours.</p>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -31,7 +31,7 @@ const Homepage = () => {
               <p>My name is Hunter, and I'm always happy. I'm also super smart, fun-loving, loyal, and very rarely a little stubborn. I run very fast, that's why my name is Hunter!</p>
             </div>
           </div>
-          <div className="dog-preview-list-item Labrador">
+          <div className="dog-preview-list-item lab-retriever">
             <img alt= "dog" src={require("../images/dog2.jpg")}/> 
             <div className="dog-preview-description">
               <h3>Champ</h3>

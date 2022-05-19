@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const singledog = (props) => {
+  console.log(props)
     return (
       <div >
         <h1>{props.singledog.breed}</h1>

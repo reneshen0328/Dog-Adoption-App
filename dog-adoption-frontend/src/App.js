@@ -6,10 +6,13 @@ import Navbar from "./components/navbar";
 import Homepage from "./components/homepage";
 import Singledog from "./components/singledog"
 import Alldogs from "./components/alldogs"
+
 function App() {
   const [singledog, setSingledog] = useState({});
-  // setSingledog ("helloword");
-  // console.log(singledog)
+  const setSingleDogPage = (image,name,age,description,breed) => {
+    setSingledog({image: image, name: name, age: age, description: description,breed: breed})
+ }
+
   return (
     <div className="App">
       <Helmet>
@@ -23,9 +26,8 @@ function App() {
       <Routes >
         <Route exact path= "/" element= { <Homepage />}/>
         <Route exact path= "/singledog" element= { <Singledog singledog={singledog}/>}/> 
-        <Route exact path= "/alldogs" element= { <Alldogs setSingledog= {setSingledog}/>}/> 
+        <Route exact path= "/alldogs" element= { <Alldogs setSingleDogPage={setSingleDogPage}/>}/> 
       </Routes>
-
       </Router>
    
     </div>

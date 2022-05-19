@@ -163,6 +163,8 @@ span.font-luckiest-guy {
   font-weight: 300;
 }
 
+/* CATEGORY PAGE */
+
 .dog-preview-list {
   display: flex;
   justify-content: flex-start;
@@ -177,34 +179,45 @@ span.font-luckiest-guy {
   height: auto;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0 60px;
+  margin: 0 60px 60px 60px;
 }
 
-.dog-preview-description {
+.subtitle-wrapper {
+  display: flex;
+  font-size: 19px;
+  text-align: left;
+  color: #8F96A1;
+}
+
+.subtitle-wrapper p {
+  margin: 0;
+}
+
+.subtitle-wrapper p:first-child{
+  margin-right: 15px;
+}
+
+.dog-preview-description-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.dog-preview-description h3 {
-  padding: 21px 0 13px 0;
+.dog-preview-description-wrapper h3 {
+  padding: 21px 0 7px 0;
+  margin: 0;
 }
 
-.dog-preview-description p {
+.description {
   font-size: 19px;
   letter-spacing: 0.1rem;
   text-align: left;
-  color: #8F96A1;
-  padding: 4px 0;
+  color: #444;
+  padding-top: 13px;
   margin: 0;
 }
 
 /* RESPONSIVE CSS */
-@media only screen and (max-width:1000px) {
-  .nav-link {
-    display: none;
-  }
-}
 @media only screen and (max-width:1340px) {
   .banner-left-side {
     align-items: center;
@@ -215,3 +228,38 @@ span.font-luckiest-guy {
     display: none;
   }
 }
+
+/* TODO: Fix the media query for smaller screen (centering) */
+
+/* @media only screen and (max-width:1060px) {
+  .category-wrapper .dog-preview-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
+@media only screen and (max-width:1000px) {
+  .nav-link {
+    display: none;
+  }
+
+  .hamburger-closed {
+    display: none;
+  }
+
+  .hamburger-opened {
+    position: absolute;
+  }
+
+  .category-wrapper .dog-preview-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dog-preview-list {
+    padding: 0 10px;
+  }
+}
+

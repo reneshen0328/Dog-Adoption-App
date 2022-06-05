@@ -11,6 +11,14 @@ h1 {
   padding: 0;
 }
 
+h2 {
+  font-size: 24px;
+  color: #3E4147;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
 h3 {
   font-size: 21px;
   color: #3E4147;
@@ -23,7 +31,7 @@ button {
   background-color: #004A44;
   color: #fff;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .05rem;
   width: 154px;
   height: 53px;
@@ -32,6 +40,15 @@ button {
   border-color: #004A44;
   border-style: solid;
   box-shadow: 2px 2px 5px rgba(0,74,68, .25);
+  cursor: pointer;
+}
+
+.navlink a{
+font-size: 16px;
+color: #013220;
+text-decoration: underline;
+font-weight: 400;
+margin-left: 33px;
 }
 
 .text-strong {
@@ -135,11 +152,14 @@ a {
   flex: 1;
 }
 
+.banner-left-side span.font-luckiest-guy {
+  padding-left: 30px;
+}
+
 span.font-luckiest-guy {
   font-family: Luckiest Guy;
   color: #ED5E37;
   font-size: 96px;
-  padding-left: 30px;
 }
 
 .banner-bottom {
@@ -147,7 +167,7 @@ span.font-luckiest-guy {
   flex-direction: column;
   color: #3E4147;
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 400;
   align-items: center;
   justify-content: center;
 }
@@ -160,32 +180,40 @@ span.font-luckiest-guy {
   width: 250px;
   margin-top: -55px;
   letter-spacing: .15rem;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* CATEGORY PAGE */
+.category-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.category-wrapper h1 {
+  color: #964B00;
+}
 
 .dog-preview-list {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 60px;
+  margin-top: 46px;
 }
 
 .dog-preview-list-item {
   display: flex;
   flex: 1;
-  max-width: 350px;
+  /* max-width: 350px; */
   height: auto;
   flex-direction: column;
-  justify-content: flex-start;
   margin: 0 60px 60px 60px;
 }
 
 .subtitle-wrapper {
   display: flex;
   font-size: 19px;
-  text-align: left;
   color: #8F96A1;
 }
 
@@ -210,11 +238,72 @@ span.font-luckiest-guy {
 
 .description {
   font-size: 19px;
-  letter-spacing: 0.1rem;
-  text-align: left;
+  letter-spacing: 0.02rem;
   color: #444;
   padding-top: 13px;
   margin: 0;
+}
+
+/* SINGLE DOG DETAIL PAGE */
+.single-dog-detail-wrapper {
+  display: flex;
+}
+
+.single-dog-detail-bg {
+  background-color: #F0B861;
+  border-radius: 15px 0 0 15px;
+  padding: 0 0 25px 51px;
+  margin-top: 80px;
+  height: 480px;
+}
+
+.single-dog-detail-content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: flex-start;
+  padding-top: 60px;
+  width: 588px;
+}
+
+.single-dog-detail-image {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.single-dog-detail-image img {
+  box-shadow: 4px 4px 10px rgba(0,74,68, .25);
+}
+
+.single-dog-detail-description.age{
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+}
+
+.characteristics {
+  background-color: white;
+  width: fit-content;
+  margin: 29px 0 0 15px;
+  padding: 8px 20px;
+  border: 1px solid #004A44;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px rgba(0,74,68, .12);
+}
+
+.single-dog-detail-description {
+  color: #000;
+  margin: 0;
+  padding: 3px 0;
+}
+
+.single-dog-description {
+  color: #000;
+  margin: 0 40px 58px 15px;
+}
+
+.adopt-btn {
+  width: 123px;
 }
 
 /* RESPONSIVE CSS */

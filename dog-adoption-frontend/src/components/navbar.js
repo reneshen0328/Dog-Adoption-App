@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
-import React, {useState } from "react";
+/* eslint-disable max-len */
+import {NavLink} from 'react-router-dom';
+import React, {useState} from 'react';
 
 const Navbar = () => {
-
-  const [hamburgerClicked, setHamburgerClicked] = useState(false)
+  const [hamburgerClicked, setHamburgerClicked] = useState(false);
 
   return (
     <nav className="navbar-wrapper">
@@ -11,7 +11,7 @@ const Navbar = () => {
         <li className="logo-wrapper">
           <a className="logo">
             <NavLink to= "/">
-              <img alt="logo" src={require("../images/dog-logo.jpg")}></img>
+              <img alt="logo" src={require('../images/dog-logo.jpg')}></img>
             </NavLink>
           </a>
         </li>
@@ -20,27 +20,27 @@ const Navbar = () => {
             {/* <NavLink to= "">
               <img alt="list-icon" src={require("../images/List.jpg")}></img>
             </NavLink> */}
-            <img onClick={() => setHamburgerClicked(true)} alt="list-icon" src={require("../images/List.jpg")}></img>
+            <img onClick={() => setHamburgerClicked(true)} alt="list-icon" src={require('../images/List.jpg')}></img>
 
           </a>
           <div className={`${!hamburgerClicked ? 'hamburger-closed' : 'hamburger-opened'}`}>
-              <ul>
-                <li>
-                  <a href="/alldogs">All Dogs</a>
-                </li>
-                <li>
-                  <a href="/">Retriever</a>
-                </li>
-                <li>
-                  <a href="/">Bulldog</a>
-                </li>
-                <li>
-                  <a href="/">Corgi</a>
-                </li>
-                <li>
-                  <a href="/">Poodle</a>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                <a href="/alldogs">All Dogs</a>
+              </li>
+              <li>
+                <a href="/">Retriever</a>
+              </li>
+              <li>
+                <a href="/">Bulldog</a>
+              </li>
+              <li>
+                <a href="/">Corgi</a>
+              </li>
+              <li>
+                <a href="/">Poodle</a>
+              </li>
+            </ul>
           </div>
         </li>
       </ul>
@@ -49,7 +49,7 @@ const Navbar = () => {
         <li className="search-icon">
           <a>
             <NavLink to= "">
-              <img alt="search-icon" src={require("../images/MagnifyingGlass.jpg")}></img>
+              <img alt="search-icon" src={require('../images/MagnifyingGlass.jpg')}></img>
             </NavLink>
           </a>
         </li>
@@ -93,5 +93,5 @@ const Navbar = () => {
     </nav>
   );
 };
-  
+
 export default Navbar;

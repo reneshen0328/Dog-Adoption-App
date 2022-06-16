@@ -8,6 +8,10 @@ import Navbar from './components/navbar';
 import Homepage from './components/homepage';
 import Singledog from './components/singledog';
 import Alldogs from './components/alldogs';
+import Retriever from './components/retriever';
+import Bulldog from './components/bulldog';
+import Corgi from './components/corgi';
+import Samoyed from './components/samoyed';
 
 function App() {
   const [singledog, setSingledog] = useState({});
@@ -29,6 +33,10 @@ function App() {
           <Route exact path= "/" element= { <Homepage />}/>
           <Route exact path= "/singledog" element= { <Singledog singledog={singledog}/>}/>
           <Route exact path= "/alldogs" element= { <Alldogs setSingleDogPage={setSingleDogPage}/>}/>
+          <Route exact path= "/retrievers" element= { <Retriever setSingleDogPage={setSingleDogPage}/>}/>
+          <Route exact path= "/bulldogs" element= { <Bulldog setSingleDogPage={setSingleDogPage}/>}/>
+          <Route exact path= "/corgis" element= { <Corgi setSingleDogPage={setSingleDogPage}/>}/>
+          <Route exact path= "/samoyeds" element= { <Samoyed setSingleDogPage={setSingleDogPage}/>}/>
         </Routes>
       </Router>
 

@@ -24,7 +24,7 @@ const Homepage = (props) => {
           </div>
         </div>
         <div className="banner-bottom">
-          <h3>Find Your Next Loyal Best Friend</h3>
+          <h2>Find Your Next Loyal Best Friend</h2>
           <img alt="arrow-down" src={require('../images/arrow-down.png')} />
         </div>
       </div>

@@ -68,6 +68,10 @@ ul:last-child {
   float: right;
 }
 
+.hamburger {
+  display: none;
+}
+
 li {
   margin: 0;
   padding: 0;
@@ -118,6 +122,38 @@ a {
   margin: 10px 20px;
 }
 
+.hamburger-list {
+  transition: all 0.3s ease;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #183F3C;
+  margin-left: -108px;
+  margin-top: 10px;
+  border-radius: 0 0 15px 15px;
+  z-index: 120;
+}
+
+.hamburger-list ul {
+  width: 100%;
+  padding: 0;
+}
+
+.hamburger-list li {
+  padding: 30px 40px;
+}
+
+.hamburger-list li:hover {
+  background-color: #013220;
+}
+
+.hamburger-list a {
+  color: #DFDEE2;
+  font-size: 21px;
+  font-weight: 400;
+}
+
 .navbar-wrapper .dropdown a {
   color: #DFDEE2;
   width: auto;
@@ -158,7 +194,7 @@ a {
 
 span.font-luckiest-guy {
   font-family: Luckiest Guy;
-  color: #ED5E37;
+  color: #94280A;
   font-size: 96px;
 }
 
@@ -176,12 +212,26 @@ span.font-luckiest-guy {
   margin-bottom: -30px;
 }
 
-.banner-bottom h3 {
+.banner-bottom h2 {
+  animation-name: banner-animation;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  position: absolute;
   width: 250px;
   margin-top: -55px;
   letter-spacing: .15rem;
   font-weight: 400;
   text-align: center;
+}
+
+@keyframes banner-animation {
+  0% {  margin-top: -55px; }
+  25% {  margin-top: -52.5px; }
+  50% {  margin-top: -50px; }
+  75% {  margin-top: -47.5px; }
+  100% {  margin-top: -45px;}
 }
 
 /* CATEGORY PAGE */
@@ -196,6 +246,11 @@ span.font-luckiest-guy {
   color: #964B00;
 }
 
+.category-wrapper h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
 .dog-preview-list {
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +260,7 @@ span.font-luckiest-guy {
 .dog-preview-list-item {
   display: flex;
   flex: 1;
-  /* max-width: 350px; */
+  max-width: 380px;
   height: auto;
   flex-direction: column;
   margin: 0 60px 60px 60px;
@@ -214,7 +269,7 @@ span.font-luckiest-guy {
 .subtitle-wrapper {
   display: flex;
   font-size: 19px;
-  color: #8F96A1;
+  color: #595959;
 }
 
 .subtitle-wrapper p {
@@ -316,21 +371,31 @@ span.font-luckiest-guy {
   .banner-right-side {
     display: none;
   }
-}
 
-/* TODO: Fix the media query for smaller screen (centering) */
-
-/* @media only screen and (max-width:1060px) {
-  .category-wrapper .dog-preview-list {
+  .dog-preview-list {
+    padding: 0 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
-} */
+
+  .dog-preview-list-item {
+    display: flex;
+    max-width: 380px;
+  }
+
+  .dog-preview-list img{
+    width: 250px;
+    height: auto;
+  }
+}
 
 @media only screen and (max-width:1000px) {
   .nav-link {
     display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .hamburger-closed {
@@ -347,8 +412,25 @@ span.font-luckiest-guy {
     align-items: center;
   }
 
-  .dog-preview-list {
-    padding: 0 10px;
+  .banner-bottom h2 {
+    animation-name: banner-animation;
+    animation-duration: 0s;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .banner-left-side span {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width:580px) {
+  .banner-left-side {
+    font-size: 16px;
+  }
+
+  .banner-content {
+    padding: 0;
   }
 }
 

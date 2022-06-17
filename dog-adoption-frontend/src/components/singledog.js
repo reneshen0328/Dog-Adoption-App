@@ -1,36 +1,41 @@
-import { NavLink } from "react-router-dom";
+/* eslint-disable max-len */
+import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const singledog = (props) => {
-    return (
-      <div >
-        <h1>{props.singledog.breed}</h1>
-        <h3>Want to know the newest updates on your favorite dog?</h3>
-        <button>Subscribe Now</button>
+  console.log(props);
+  return (
+    <div className="category-wrapper">
+      <span className="font-luckiest-guy"><h1> {props.singledog.breed} </h1></span>
+      <svg height="10" width="360">
+        <path stroke="#004A44" strokeWidth={10} d="M5 0 2000 0" />
+      </svg>
+      <p>Want To Know The Newest Updates On Your Favorite Dog?</p>
+      <button>Subscribe Now</button>
 
-        <div id="single-dog">
-          <div id="single-dog-left">
-            <h1>{props.singledog.name}</h1>
-            <h1>{props.singledog.age}</h1>
-            <div id="dog-characteristics">
-              <h3>Good Guard Dog</h3>
-              <h3>Good Family Pet</h3>
-              <h3>Loyal Companion</h3>
-              <h3>Courageous</h3>
+      <div className="single-dog-detail-wrapper">
+        <div className="single-dog-detail-bg">
+          <div className='single-dog-detail-content'>
+            <h2 className='single-dog-detail-description'>{props.singledog.name}</h2>
+            <p className='single-dog-detail-description age'>{props.singledog.age}</p>
+            <p className='characteristics'>{props.singledog.characteristics}</p>
+            <p className='description single-dog-description'>{props.singledog.description}</p>
+            <div>
+              <button className='adopt-btn'>Adopt Now</button>
+              <a className="navlink">
+                <NavLink to= "/">View Other Dogs
+                </NavLink>
+              </a>
             </div>
-
-            <p>{props.singledog.description}</p>
-            <button>Adopt Now</button>
-            <a>
-              <NavLink to= "/">View Other Dogs
-              </NavLink>
-            </a>
-          </div>
-          <div id="single-dog-right">
-            <img alt="individual dog" src={props.singledog.image} />
           </div>
         </div>
+
+        <div className="single-dog-detail-image">
+          <img alt="individual dog" src={require(`../images/${props.singledog.image}`)} />
+        </div>
       </div>
-    );
-  };
-  
-  export default singledog;
+    </div>
+  );
+};
+
+export default singledog;

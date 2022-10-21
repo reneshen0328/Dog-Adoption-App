@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dog-Adoption-App/static/css/main.4e37de35.css",
-    "main.js": "/Dog-Adoption-App/static/js/main.d554669e.js",
+    "main.js": "/Dog-Adoption-App/static/js/main.c86a7193.js",
     "static/media/landingPage.jpg": "/Dog-Adoption-App/static/media/landingPage.8338b7dd26e0c9ba59fd.jpg",
     "static/media/landing-page-img.jpg": "/Dog-Adoption-App/static/media/landing-page-img.18c2ee93ef312190ed17.jpg",
     "static/media/dog1-detail.jpg": "/Dog-Adoption-App/static/media/dog1-detail.126054556151c715e8ed.jpg",
@@ -18,10 +18,10 @@
     "static/media/dog6.jpg": "/Dog-Adoption-App/static/media/dog6.5980bbb0d7ef660a0a3c.jpg",
     "index.html": "/Dog-Adoption-App/index.html",
     "main.4e37de35.css.map": "/Dog-Adoption-App/static/css/main.4e37de35.css.map",
-    "main.d554669e.js.map": "/Dog-Adoption-App/static/js/main.d554669e.js.map"
+    "main.c86a7193.js.map": "/Dog-Adoption-App/static/js/main.c86a7193.js.map"
   },
   "entrypoints": [
     "static/css/main.4e37de35.css",
-    "static/js/main.d554669e.js"
+    "static/js/main.c86a7193.js"
   ]
 }

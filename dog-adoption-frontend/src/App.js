@@ -30,7 +30,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes >
-          <Route exact path= "/" element= { <Homepage />}/>
+          <Route exact path= "/Dog-Adoption-App" element= { <Homepage />}/>
           <Route exact path= "/singledog" element= { <Singledog singledog={singledog}/>}/>
           <Route exact path= "/alldogs" element= { <Alldogs setSingleDogPage={setSingleDogPage}/>}/>
           <Route exact path= "/retrievers" element= { <Retriever setSingleDogPage={setSingleDogPage}/>}/>

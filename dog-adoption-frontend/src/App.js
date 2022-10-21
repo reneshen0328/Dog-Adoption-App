@@ -19,6 +19,9 @@ function App() {
     setSingledog({image: image, name: name, age: age, description: description, breed: breed, characteristics: characteristics});
   };
 
+  const testing = 'testing';
+  console.log(testing);
+
   return (
     <div className="App">
       <Helmet>

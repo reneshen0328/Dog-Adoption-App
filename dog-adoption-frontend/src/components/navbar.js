@@ -3,7 +3,15 @@ import {NavLink} from 'react-router-dom';
 import React, {useState} from 'react';
 
 const Navbar = () => {
-  const [hamburgerClicked, setHamburgerClicked] = useState(false);
+  const [hamburgerState, setHamburgerState] = useState(false);
+
+  const openHamburger = function() {
+    if (hamburgerState === false) {
+      setHamburgerState(true);
+    } else {
+      setHamburgerState(false);
+    }
+  };
 
   return (
     <nav className="navbar-wrapper">
@@ -17,28 +25,25 @@ const Navbar = () => {
         </li>
         <li className="hamburger">
           <a className="list-icon">
-            {/* <NavLink to= "">
-              <img alt="list-icon" src={require("../images/List.jpg")}></img>
-            </NavLink> */}
-            <img onClick={() => setHamburgerClicked(true)} alt="list-icon" src={require('../images/List.jpg')}></img>
+            <img onClick={openHamburger} alt="list-icon" src={require('../images/List.jpg')}></img>
 
           </a>
-          <div className={`${!hamburgerClicked ? 'hamburger-closed' : 'hamburger-opened'}`}>
+          <div className={`hamburger-list ${!hamburgerState ? 'hamburger-closed' : 'hamburger-opened'}`}>
             <ul>
               <li>
                 <a href="/alldogs">All Dogs</a>
               </li>
               <li>
-                <a href="/">Retriever</a>
+                <a href="/retrievers">Retriever</a>
               </li>
               <li>
-                <a href="/">Bulldog</a>
+                <a href="/bulldogs">Bulldog</a>
               </li>
               <li>
-                <a href="/">Corgi</a>
+                <a href="/corgis">Corgi</a>
               </li>
               <li>
-                <a href="/">Poodle</a>
+                <a href="/samoyeds">Samoyed</a>
               </li>
             </ul>
           </div>
@@ -62,29 +67,29 @@ const Navbar = () => {
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to= "/">
+            <NavLink to= "/retrievers">
               Retriever
             </NavLink>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to= "/">
+            <NavLink to= "/bulldogs">
             Bulldog
             </NavLink>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to= "/">
+            <NavLink to= "/corgis">
             Corgi
             </NavLink>
           </a>
         </li>
         <li className="nav-link">
           <a>
-            <NavLink to= "/">
-            Poodle
+            <NavLink to= "/samoyeds">
+            Samoyed
             </NavLink>
           </a>
         </li>

@@ -11,7 +11,7 @@ const Alldog = (props) => {
       <svg height="10" width="220">
         <path stroke="#004A44" strokeWidth={10} d="M5 0 2000 0" />
       </svg>
-      <p>Want To Know The Newest Updates On Your Favorite Dog?</p>
+      <h2>Want To Know The Newest Updates On Your Favorite Dog?</h2>
       <button>Subscribe Now</button>
 
       <div className="dog-preview-list">
